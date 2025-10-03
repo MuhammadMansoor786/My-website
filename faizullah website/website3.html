@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizullah Hardware & Software Shop</title>
+    <link rel="stylesheet" href="website.css">
+
+    <style>
+        /* ---------- General Styles ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* ---------- Header ---------- */
+        header {
+
+            background: linear-gradient(90deg, #ff7eb3, #65d6ce);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* ---------- Navigation ---------- */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #ff7eb3;
+        }
+
+        /* ---------- Sections ---------- */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #444;
+        }
+
+        /* ---------- Grid Layout ---------- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 15px;
+            background: #65d6ce;
+            color: white;
+        }
+
+        /* ---------- Reviews ---------- */
+        .review {
+            background: #eee;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 10px;
+            max-width: 600px;
+            font-style: italic;
+        }
+
+        /* ---------- Contact Form ---------- */
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: #65d6ce;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background: #ff7eb3;
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ---------- Header ---------- -->
+    <header id="home">
+        <!-- About Us Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-text">
+      
+    <!-- Stylish About Us Section -->
+
+<section id="about" class="about-stylish">
+  <h2>About Us</h2>
+  <p id="typing-text" class="about-text"></p>
+</section>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+  .about-stylish {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  .about-stylish h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    color: #ff6ec4;
+    margin-bottom: 25px;
+  }
+
+  .about-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+    white-space: pre-line; /* preserves line breaks */
+  }
+
+  .shop-name {
+    font-weight: 600;
+    color: #007BFF;
+  }
+
+  .highlight {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    color: #ff6ec4;
+    font-weight: bold;
+  }
+
+  /* Blinking cursor */
+  #typing-text::after {
+    content: "|";
+    animation: blink 0.8s infinite;
+    margin-left: 2px;
+    color: #ff6ec4;
+    font-weight: bold;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+</style>
+
+<script>
+  // Full paragraph with styled spans
+  const text = `Welcome to <span class="shop-name">Faizullah Hardware & Software Shop</span> – 
+your trusted place for the latest mobile parts, accessories, and software services.  
+From stylish phone cases to durable chargers, professional software installation,  
+and custom hardware solutions – <span class="highlight">we cover it all!</span>`;
+
+  let i = 0;
+  const speed = 40; // typing speed (ms per character)
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typing-text").innerHTML = text.substring(0, i+1);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
+</section>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+  .about-stylish {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  .about-stylish h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    color: #ff6ec4;
+    margin-bottom: 25px;
+  }
+
+  /* Whole paragraph styled */
+  .about-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  /* Shop name highlight */
+  .about-text .shop-name {
+    font-weight: 600;
+    color: #007BFF;
+  }
+
+  /* Stylish ending highlight */
+  .about-text .highlight {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    color: #ff6ec4;
+    font-weight: bold;
+  }
+</style>
+
+</section>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+  .about-stylish {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  .about-stylish h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    color: #ff6ec4;
+    margin-bottom: 20px;
+  }
+
+  .about-stylish p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+  }
+
+  .about-stylish .shop-name {
+    font-weight: 600;
+    color: #007BFF;
+  }
+
+  .about-stylish .highlight {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    color: #ff6ec4;
+    font-weight: bold;
+  }
+</style>
+
+      <p>
+        Our mission is to provide top-quality products and reliable services,  
+        ensuring that your devices always perform at their best.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="/pics/animated.png" alt="About Us">
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+  }
+
+  .about-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+  }
+
+  .about-text h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .highlight {
+    color: #007BFF;
+    font-weight: bold;
+  }
+
+  .about-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+
+  .about-image img {
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+        <button id="darkModeBtn">🌙 Dark Mode</button>
+    </header>
+
+
+    <!-- ---------- Navigation ---------- -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ---------- About Section  to bold the fonts size---------- -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Faizullah Hardware & Software Shop, we provide the latest mobile parts, accessories, and software
+            services. From phone cases to chargers, software installation, and custom hardware solutions, we cover it
+            all!</p>
+    </section>
+
+    <!-- ---------- Products Section ---------- -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="/pics/mobile.png" alt="Mobile">
+                <h3>Mobiles</h3>
+            </div>
+            <div class="card">
+                <img src="/pics/mobile glass.png" alt="Mobile Glass">
+                <h3>Mobile Glass</h3>
+            </div>
+            <div class="card">
+                <img src="/pics/charger.png" alt="Charger">
+                <h3>Chargers</h3>
+            </div>
+            <div class="card">
+                <img src="/pics/phone case.png" alt="Case">
+                <h3>Phone Cases</h3>
+            </div>
+            <div class="card">
+                <img src="/pics/airpods.png" alt="Earphones">
+                <h3>Airbirds</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------- Portfolio Section ---------- -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="/pics/software.png" alt="Software">
+                <h3>Software Installation</h3>
+            </div>
+            <div class="card">
+                <img src="/pics/hardware.png" alt="Hardware">
+                <h3>Hardware Repair</h3>
+            </div>
+            <div class="card">
+                <img src="/pics/pc build.png" alt="Custom PC">
+                <h3>Custom PC Builds</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------- Reviews Section  to bold the font size---------- -->
+     
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">"Best shop in Babuzai! Highly recommended."</div>
+        <div class="review">"Great customer support and genuine products."</div>
+        <div class="review">"Affordable prices with excellent service."</div>
+    </section>
+
+    <!-- ---------- Contact Section ---------- -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ---------- Footer ---------- -->
+    <footer>
+        <p>📍 Location: Bank Road, Babuzai</p>
+        <p>📞 Phone: +92 3189983606 | ✉ Email: pro924432@gmail.com</p>
+        <p>&copy; 2025 Faizullah Hardware & Software Shop</p>
+    </footer>
+
+    <!-- ---------- JavaScript ---------- -->
+    <script>
+        // Contact Form Submission
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Thank you! Your message has been sent.");
+        });
+    </script>
+    <script src="website.js"></script>
+
+
+</body>
+
+</html>

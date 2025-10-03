@@ -1,0 +1,58 @@
+/* Dark Mode Button */
+#darkModeBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+#darkModeBtn:hover {
+  background: #ff7eb3;
+  color: white;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode header {
+  background: linear-gradient(90deg, #333, #111);
+}
+
+.dark-mode nav {
+  background: #222;
+}
+
+.dark-mode nav a {
+  color: #ddd;
+}
+
+.dark-mode nav a:hover {
+  background: #555;
+}
+
+.dark-mode .card {
+  background: #1e1e1e;
+  color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .card h3 {
+  background: #333;
+}
+
+.dark-mode .review {
+  background: #2a2a2a;
+}
+
+.dark-mode footer {
+  background: #000;
+  color: #aaa;
+}
